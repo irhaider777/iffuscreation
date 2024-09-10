@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFFUs_Creation</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">IFFU S CREATION</div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="/About.html">About Us</a></li>
+            <li><a href="/photo.html">Photos</a></li>
+            <li><a href="/video.html">Videos</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="/contacr.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">IFFU S CREATION</h2>
+            <h1 class="hero-title">Capturing Memories for a Lifetime</h1>
+            <p class="hero-subtitle">Professional Wedding Photography & Videography</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-items">
+            <!-- Wedding Photography Video -->
+            <div class="service-item">
+                <video src="/videos/WhatsApp Video 2024-09-08 at 21.03.17_830074ff.mp4" alt="Wedding Photography" autoplay muted loop playsinline></video>
+                <h3>Wedding Photography</h3>
+                <p>High-quality, candid, and artistic wedding photography services.</p>
+            </div>
+    
+            <!-- Wedding Videography Video -->
+            <div class="service-item">
+                <video src="/videos/WhatsApp Video 2024-09-08 at 21.03.18_df5a2e38.mp4" alt="Wedding Videography" autoplay muted loop playsinline></video>
+                <h3>Wedding Videography</h3>
+                <p>Cinematic and personalized wedding videography to cherish forever.</p>
+            </div>
+    
+            <!-- Pre-Wedding Shoots Video -->
+            <div class="service-item">
+                <video src="/videos/WhatsApp Video 2024-09-08 at 21.03.20_6a811053.mp4" alt="Pre-Wedding Shoots" autoplay muted loop playsinline></video>
+                <h3>Pre-Wedding Shoots</h3>
+                <p>Beautiful pre-wedding shoots capturing your love story in unique locations.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">Our Portfolio</h2>
+        <div class="portfolio-items">
+            <img src="/images/2.jpg" alt="Wedding 1">
+            <img src="/images/6.jpg" alt="Wedding 2">
+            <img src="/images/3.jpg" alt="Wedding 3">
+            <img src="/images/4.jpg" alt="Wedding 4">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@weddingcaptures.com">info@weddingcaptures.com</a></p>
+            <p>Phone: <a href="tel:+917006242355">7006242355</a> / <a href="tel:+919419775448">9419775448</a></p>
+            <p>Address: Chattabal, Srinagar</p>
+        </div>
+    </footer>
+    
+
+    <script>const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        // Toggle the "active" class on hamburger and nav links
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - Wedding Captures</title>
+        <link rel="stylesheet" href="css/video.css">
+        <link rel="stylesheet" href="/css/nav.css">
+    </head>
+    <body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+          <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            Iffu s Creation
+          </a>
+          <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+              <li class="navbar-item"><a class="navbar-link" href="/About.html">About</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/photo.html">Photos</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/video.html">Videos</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/price.html">Price </a></li>
+              <li class="navbar-item"><a class="navbar-link" href="/contacr.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+   
+
+      <section class="gallery-section">
+        <div class="container">
+            <h2>Our Video Gallery</h2>
+            <p>Browse through our collection of beautiful wedding videos and cinematic productions.</p>
+
+            <!-- Video Gallery Filters -->
+            <button class="filter-btn" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('weddings')">Weddings</button>
+                <button class="filter-btn" onclick="filterGallery('preweddings')">Pre-Weddings</button>
+                <button class="filter-btn" onclick="filterGallery('events')">Events</button>
+            </div>
+
+            <!-- Video Gallery Grid -->
+            <div class="gallery">
+                <div class="gallery-item weddings">
+                    <video src="video1.mp4" controls onclick="openLightbox();currentSlide(1)" class="gallery-video"></video>
+                    <h3>Wedding Video 1</h3>
+                </div>
+                <div class="gallery-item preweddings">
+                    <video src="video2.mp4" controls onclick="openLightbox();currentSlide(2)" class="gallery-video"></video>
+                    <h3>Pre-Wedding Video 1</h3>
+                </div>
+                <div class="gallery-item events">
+                    <video src="video3.mp4" controls onclick="openLightbox();currentSlide(3)" class="gallery-video"></video>
+                    <h3>Event Video 1</h3>
+                </div>
+                <div class="gallery-item weddings">
+                    <video src="video4.mp4" controls onclick="openLightbox();currentSlide(4)" class="gallery-video"></video>
+                    <h3>Wedding Video 2</h3>
+                </div>
+                <div class="gallery-item preweddings">
+                    <video src="video5.mp4" controls onclick="openLightbox();currentSlide(5)" class="gallery-video"></video>
+                    <h3>Pre-Wedding Video 2</h3>
+                </div>
+                <div class="gallery-item events">
+                    <video src="video6.mp4" controls onclick="openLightbox();currentSlide(6)" class="gallery-video"></video>
+                    <h3>Event Video 2</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal for Video -->
+        <div id="lightboxModal" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <div class="lightbox-slide">
+                    <video src="video1.mp4" controls class="lightbox-video"></video>
+                </div>
+                <div class="lightbox-slide">
+                    <video src="video2.mp4" controls class="lightbox-video"></video>
+                </div>
+                <div class="lightbox-slide">
+                    <video src="video3.mp4" controls class="lightbox-video"></video>
+                </div>
+                <div class="gallery-filters">
+                <div class="lightbox-slide">
+                    <video src="video4.mp4" controls class="lightbox-video"></video>
+                </div>
+                <div class="lightbox-slide">
+                    <video src="video5.mp4" controls class="lightbox-video"></video>
+                </div>
+                <div class="lightbox-slide">
+                    <video src="/videos/WhatsApp Video 2024-09-08 at 21.03.21_27d52cdb.mp4" controls class="lightbox-video"></video>
+                </div>
+
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@weddingcaptures.com">info@weddingcaptures.com</a></p>
+            <p>Phone: <a href="tel:+917006242355">7006242355</a> / <a href="tel:+919419775448">9419775448</a></p>
+            <p>Address: Chattabal, Srinagar, Patlipora Payeen</p>
+        </div>
+    </footer>
+
+    <script src="/javascript/nav.js"></script>
+    <script src="/javascript/video.js"></script>
+</body>
+</html>

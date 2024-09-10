@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.8em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: #f05a28;
+}
+
+/* Price List Section */
+.price-list-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.price-list-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f05a28;
+}
+
+.price-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.price-list-table th, .price-list-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.price-list-table th {
+    background-color: #f05a28;
+    color: #fff;
+}
+
+.price-list-table td ul {
+    list-style: none;
+    padding: 0;
+}
+
+.price-list-table td ul li {
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #f05a28;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ff9c00;
+}
+
+.footer-content p {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.footer-content a {
+    color: #ff9c00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #f05a28;
+}
+
+.footer-content p a {
+    font-weight: bold;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-content p {
+        font-size: 0.9em;
+    }
+}
+.footer {
+    padding: 40px 20px;
+}
